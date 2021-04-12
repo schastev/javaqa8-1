@@ -29,7 +29,6 @@ public class Radio {
     }
 
     public void next() {
-        //int maxStation = getMaxStation();
         if (currentStation == maxStation) {
             setCurrentStation(minStation);
             return;
@@ -38,7 +37,6 @@ public class Radio {
     }
 
     public void prev() {
-        //int minStation = getMinStation();
         if (currentStation == minStation) {
             setCurrentStation(maxStation);
             return;
