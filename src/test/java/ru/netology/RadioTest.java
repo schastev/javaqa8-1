@@ -13,6 +13,11 @@ class RadioTest {
     }
 
     @Test
+    public void shouldUseDefaultMaxStation() {
+        Radio radio = new Radio();
+        assertEquals(10, radio.getMaxStation());
+    }
+    @Test
     public void nextTest() {
         radio.setCurrentStation(radio.getMaxStation());
         radio.next();
